@@ -1,7 +1,7 @@
 # JOSÉ FABIÁN GRAJALES OCAMPO
 
 Este es el repositorio donde subiré las tareas del curso Computación
-impartido por el Dr. Cuahtemoc Mancillas López.
+impartido por el Dr. Cuauhtemoc Mancillas López.
 
 
 ## Descripción
