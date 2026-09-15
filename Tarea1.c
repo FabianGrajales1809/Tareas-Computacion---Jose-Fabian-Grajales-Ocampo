@@ -23,7 +23,7 @@ int main() {
     A.partes64[0] = 0x0000000000000005ULL; 
 
     B.partes64[1] = 0x0000000000000002ULL; 
-    B.partes64[0] = 0x000000000000000AULL; //
+    B.partes64[0] = 0x000000000000000AULL; 
 
     // Números de entrada
     printf("Numero A (Hexadecimal): 0x%016llX%016llX\n", A.partes64[1], A.partes64[0]);
