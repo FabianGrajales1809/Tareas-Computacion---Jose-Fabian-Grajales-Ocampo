@@ -12,6 +12,11 @@ Tarea 2: Este programa utiliza una lista enlazada para implementar el funcionami
 (el primero en entrar es el primero en salir) y una LIFO (Pila) (el último en entrar es el primero en salir) 
 almacenando datos básicos de personas.
 
+
+Tarea 3: Este programa evalúa un polinomio utilizando el Método de Horner. 
+Compara el rendimiento de una versión secuencial tradicional contra una versión vectorizada 
+utilizando Intel Intrinsics (AVX) adaptada para variables de punto flotante simple (procesando 8 elementos a la vez).
+
 ## Compilación
 
     *Tarea 1:
@@ -20,4 +25,6 @@ almacenando datos básicos de personas.
     *Tarea 2:
         gcc -o Tarea2.o Tarea2.c
         ./Tarea2.o
-
+    *Tarea 3:
+        g++ Tarea3.cpp -O3 -mavx -mavx2 -o Tarea3
+        ./Tarea3.o
