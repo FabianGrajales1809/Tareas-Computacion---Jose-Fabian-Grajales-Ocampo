@@ -17,6 +17,9 @@ Tarea 3: Este programa evalúa un polinomio utilizando el Método de Horner.
 Compara el rendimiento de una versión secuencial tradicional contra una versión vectorizada 
 utilizando Intel Intrinsics (AVX) adaptada para variables de punto flotante simple (procesando 8 elementos a la vez).
 
+Tarea 4: Este programa implementa una estructura de datos de Tabla Hash utilizando el método de encadenamiento separado 
+mediante listas enlazadas para gestionar las colisiones.
+
 ## Compilación
 
     *Tarea 1:
@@ -28,3 +31,6 @@ utilizando Intel Intrinsics (AVX) adaptada para variables de punto flotante simp
     *Tarea 3:
         g++ Tarea3.cpp -O3 -mavx -mavx2 -o Tarea3
         ./Tarea3.o
+    *Tarea 4:
+        gcc -o Tarea4.o Tarea4.c
+        ./Tarea4.o
