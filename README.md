@@ -32,10 +32,10 @@ Tarea 5: Este programa implementa un Algoritmo Genético (Evolutivo) utilizando 
         ./Tarea2.o
     *Tarea 3:
         g++ Tarea3.cpp -O3 -mavx -mavx2 -o Tarea3
-        ./Tarea3.o
-    *Tarea 4:
-        gcc Tarea4.c -o Tarea4
-        ./Tarea4
+        ./Tarea3
+     *Tarea 4:
+        gcc -o Tarea4.o Tarea4.c
+        ./Tarea4.o 
     *Tarea 5:
         gcc Tarea5.c -o Tarea5 -lm
         ./Tarea5
