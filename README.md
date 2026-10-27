@@ -20,6 +20,8 @@ utilizando Intel Intrinsics (AVX) adaptada para variables de punto flotante simp
 Tarea 4: Este programa implementa una estructura de datos de Tabla Hash utilizando el método de encadenamiento separado 
 mediante listas enlazadas para gestionar las colisiones.
 
+Tarea 5: Este programa implementa un Algoritmo Genético (Evolutivo) utilizando operaciones a nivel de bits sobre enteros de 64 bits para encontrar el mínimo global de la función de Rastrigin de dos variables.
+
 ## Compilación
 
     *Tarea 1:
@@ -32,5 +34,8 @@ mediante listas enlazadas para gestionar las colisiones.
         g++ Tarea3.cpp -O3 -mavx -mavx2 -o Tarea3
         ./Tarea3.o
     *Tarea 4:
-        gcc -o Tarea4.o Tarea4.c
-        ./Tarea4.o
+        gcc Tarea4.c -o Tarea4
+        ./Tarea4
+    *Tarea 5:
+        gcc Tarea5.c -o Tarea5 -lm
+        ./Tarea5
