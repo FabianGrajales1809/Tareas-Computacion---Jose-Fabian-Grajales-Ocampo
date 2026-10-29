@@ -22,6 +22,8 @@ mediante listas enlazadas para gestionar las colisiones.
 
 Tarea 5: Este programa implementa un Algoritmo Genético (Evolutivo) utilizando operaciones a nivel de bits sobre enteros de 64 bits para encontrar el mínimo global de la función de Rastrigin de dos variables.
 
+Tarea 6: Este programa implementa el algoritmo de compresión de Huffman en Python. Está dividido en dos scripts independientes (uno para comprimir y otro para descomprimir) e implementa un formato de archivo propio que guarda la tabla de frecuencias en una cabecera (header) usando JSON para reconstruir el árbol de manera autónoma.
+
 ## Compilación
 
     *Tarea 1:
@@ -39,3 +41,6 @@ Tarea 5: Este programa implementa un Algoritmo Genético (Evolutivo) utilizando 
     *Tarea 5:
         gcc Tarea5.c -o Tarea5 -lm
         ./Tarea5
+    *Tarea 6:
+        Tarea6_comprimir.py
+        Tarea6_descomprimir.py
