@@ -24,6 +24,8 @@ Tarea 5: Este programa implementa un Algoritmo Genético (Evolutivo) utilizando 
 
 Tarea 6: Este programa implementa el algoritmo de compresión de Huffman en Python. Está dividido en dos scripts independientes (uno para comprimir y otro para descomprimir) e implementa un formato de archivo propio que guarda la tabla de frecuencias en una cabecera (header) usando JSON para reconstruir el árbol de manera autónoma.
 
+Tarea 7: Este programa adapta el algoritmo de compresión y descompresión de Huffman a Cython.
+
 ## Compilación
 
     *Tarea 1:
@@ -42,5 +44,14 @@ Tarea 6: Este programa implementa el algoritmo de compresión de Huffman en Pyth
         gcc Tarea5.c -o Tarea5 -lm
         ./Tarea5
     *Tarea 6:
-        Tarea6_comprimir.py
-        Tarea6_descomprimir.py
+        python3 Tarea6_comprimir.py
+        python3 Tarea6_descomprimir.py
+        
+    *Tarea 7:
+        cython --embed -3 Tarea7_comprimir.pyx
+        gcc Tarea7_comprimir.c -o Tarea7_comprimir $(python3-config --cflags --embed) $(python3-config --ldflags --embed)
+        ./Tarea7_comprimir
+        
+        cython --embed -3 Tarea7_descomprimir.pyx
+        gcc Tarea7_descomprimir.c -o Tarea7_descomprimir $(python3-config --cflags --embed) $(python3-config --ldflags --embed)
+        ./Tarea7_descomprimir
