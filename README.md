@@ -26,6 +26,8 @@ Tarea 6: Este programa implementa el algoritmo de compresión de Huffman en Pyth
 
 Tarea 7: Este programa adapta el algoritmo de compresión y descompresión de Huffman a Cython.
 
+Tarea 8: Este programa implementa el cálculo del producto punto entre dos vectores de punto flotante simple en C (`Tarea8.c`) utilizando Intel Intrinsics (AVX2 y FMA) de la biblioteca `#include <immintrin.h>` (`_mm256_setzero_ps`, `_mm256_loadu_ps`, `_mm256_fmadd_ps` y `_mm256_storeu_ps`) para procesar 8 elementos de manera simultánea. El código se compila como una biblioteca compartida (`Tarea8.so`) y se manda llamar desde Python (`Tarea8.py`) mediante la biblioteca `ctypes`, validando su exactitud y comparando su tiempo de ejecución contra una versión en Python puro.
+
 ## Compilación
 
     *Tarea 1:
@@ -55,3 +57,7 @@ Tarea 7: Este programa adapta el algoritmo de compresión y descompresión de Hu
         cython --embed -3 Tarea7_descomprimir.pyx
         gcc Tarea7_descomprimir.c -o Tarea7_descomprimir $(python3-config --cflags --embed) $(python3-config --ldflags --embed)
         ./Tarea7_descomprimir
+    
+    *Tarea 8:
+        gcc -O3 -mavx2 -mfma -shared -fPIC Tarea8.c -o Tarea8.so
+        python3 Tarea8.py
